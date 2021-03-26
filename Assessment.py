@@ -5,7 +5,9 @@ import MeanSquaredError
 import RefineValue
 import FixDataPoints
 
-issues to fix - fix mse value in loop and fix
+issues to fix - fix mse value in loop
+fix data to make sure its getting changed to appropriate a/b values
+
 # Task 1 - Read the x/y data points
 actualDataFrame = Plot.getDataFrame("datapoints.csv")
 
