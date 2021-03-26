@@ -1,2 +1,0 @@
-# assesment
- spiced academy assessment
