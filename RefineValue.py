@@ -1,5 +1,6 @@
 import MeanSquaredError
 import FixDataPoints
+import math
 
 
 def refine(actualDataFrame, value, iterations, increment, equationPart):
@@ -11,16 +12,15 @@ def refine(actualDataFrame, value, iterations, increment, equationPart):
 
         # re-calculate y data using the modified value
         if equationPart == "a":
-            data = FixDataPoints.changeValueA(actualDataFrame, value)
+            predictedData = FixDataPoints.changeValueA(actualDataFrame, value)
         elif equationPart == "b":
-            print("We are changing b")
-            data = FixDataPoints.changeValueB(actualDataFrame, value)
+            predictedData = FixDataPoints.changeValueB(actualDataFrame, value)
 
         # update mse value
-        mse = MeanSquaredError.calculate(actualDataFrame, data)
-        print('mse: ', actualDataFrame)
-        print('mse: ', data)
+        mse = MeanSquaredError.calculate(actualDataFrame, predictedData)
+
         if mse < currentMeanSquareErrorValue:
             currentMeanSquareErrorValue = mse
+            returnValue = value
 
-    return {"value": value, "mse": currentMeanSquareErrorValue}
+    return {"value": '{0:.2g}'.format(returnValue), "mse": currentMeanSquareErrorValue}
