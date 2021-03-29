@@ -5,5 +5,5 @@
 - Task 3 - Set the slope a to 10 and the intercept b to 0. Calculate y for every value of x
 - Task 4 - Calculate the Mean Squared Error (MSE)
 - Task 5 - Find a value for a that gives the lowest possible MSE
-- Task 6 - modify b
+- Task 6 - Modify b
 - Task 7 - How could the algorithm be improved?

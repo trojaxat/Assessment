@@ -22,7 +22,7 @@ refinedMSE = RefineValue.refine(actualDataFrame, 10, 100, 0.1, "a")
 print("Final a: " + str(refinedMSE["value"]) +
       " and mse: " + str(refinedMSE["mse"]))
 
-# Task 6 - modify b
+# Task 6 - Modify b
 refinedMSE = RefineValue.refine(actualDataFrame, 10, 100, 0.1, "b")
 print("Final b: " + str(refinedMSE["value"]) +
       " and mse: " + str(refinedMSE["mse"]))
