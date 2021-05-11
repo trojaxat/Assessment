@@ -34,3 +34,6 @@ improvementIdea3 = "MSE seems to be uncommonly used, rather RMSE, it could be lo
 improvementIdea4 = "Obviously the issue of starting with a slope of 10 is not ubiquitously useful and gradient descending would make sense in other scenarios"
 
 plt.show()
+
+
+#Hello update from Narges
